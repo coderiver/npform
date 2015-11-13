@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- theme color for android 5.0 -->
+    <meta name="theme-color" content="#fff">
+    <!-- <meta name="viewport" content="width=1200"> -->
+    <!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" media="all" href="css/screen.css" >
+    <script src="js/app.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+    <!-- BEGIN  out-->
+    <div class="out">
+        <div class="container">
+        	<div class="page-step">
+        		<div class="ui tablet stackable steps">
+        			<div class="disabled step">
+        				<div class="content">
+        					<div class="title">Крок 1</div>
+        					<div class="description">Дані про послугу</div>
+        				</div>
+        			</div>
+        			<div class="active step">
+        				<div class="content">
+        					<div class="title">Крок 2</div>
+        					<div class="description">Дані про відправника</div>
+        				</div>
+        			</div>
+        			<div class="disabled step">
+        				<div class="content">
+        					<div class="title">Крок 3</div>
+        					<div class="description">Дані про одержувача</div>
+
+        				</div>
+        			</div>
+        			<div class="disabled step">
+        				<div class="content">
+        					<div class="title">Крок 4</div>
+        					<div class="description">Інформація про відправлення</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="steps-nav">
+        		<div class="ui centered grid">
+        			<div class="eight wide column right aligned">
+        				<div class="steps-nav__link">
+        					<a href="#"><i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад</a>
+        				</div>
+        			</div>
+        			<div class="eight wide column">
+        				<div class="steps-nav__link">
+        					<a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+            <form class="ui form">
+                <div class="inline fields">
+                    <label>Відправник <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="sender" checked="checked">
+                            <label>Фізична особа</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="sender">
+                            <label>Юридична особа</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Країна <sup><i class="asterisk red icon"></i></sup></label>
+                    <input type="text" name="country" placeholder="">
+                </div>
+                <div class="field">
+                    <label>Місто <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="city[city-first]" placeholder="">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="city[city-first]" placeholder="Placeholder">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Прізвище, ім'я відправника <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="name2[first-name]" placeholder="">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="name2[last-name]" placeholder="Placeholder">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="" placeholder="">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="" placeholder="Placeholder">
+                        </div>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Номер телефону <sup><i class="asterisk red icon"></i></sup></label>
+                        <input type="tel" name="phone" placeholder="" required>
+                    </div>
+                    <div class="field">
+                        <label>Email <sup><i class="asterisk red icon"></i></sup></label>
+                        <input type="email" name="email" placeholder="Placeholder" required>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="radio2" checked="checked">
+                            <label>Фізична особа</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="radio2">
+                            <label>Юридична особа</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Інформація відправника <sup><i class="asterisk red icon"></i></sup></label>
+                    <input type="text" name="name3" placeholder="" required>
+                </div>
+                <div class="field">
+                    <label>Адреса <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="Placeholder" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Детальна адреса</label>
+                    <input type="text" name="name3" placeholder="">
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Дата</label>
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <select class="ui fluid search dropdown" name="">
+                                    <option value="">11</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="seven wide field">
+                                <select class="ui fluid search dropdown" name="">
+                                    <option value="">Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="five wide field">
+                                <select class="ui fluid search dropdown" name="">
+                                    <option value="">2015</option>
+                                    <option value="1">2013</option>
+                                    <option value="2">2014</option>
+                                    <option value="3">2015</option>
+                                    <option value="4">2016</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="two fields">
+                            <div class="field">
+                                <label>З</label>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <select class="ui fluid search dropdown" name="">
+                                            <option value="">11</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <select class="ui fluid search dropdown" name="">
+                                            <option value="">11</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>По</label>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <select class="ui fluid search dropdown" name="">
+                                            <option value="">11</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <select class="ui fluid search dropdown" name="">
+                                            <option value="">11</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="steps-nav">
+            	<div class="ui centered grid">
+            		<div class="eight wide column right aligned">
+            			<div class="steps-nav__link">
+            				<a href="#"><i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл</a>
+            			</div>
+            		</div>
+            		<div class="eight wide column">
+            			<div class="steps-nav__link">
+            				<span>Надіслати</span><i class="red check circle outline icon" style="font-size: 40px"></i>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END out-->
+</body>
+
+</html>

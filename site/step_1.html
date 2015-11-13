@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<script src="js/app.js"></script>
+	<script src="semantic/semantic.min.js"></script>
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+	<!-- BEGIN  out-->
+	<div class="out">
+		<div class="container">
+			<div class="page-step">
+				<div class="ui tablet stackable steps">
+					<div class="active step">
+						<div class="content">
+							<div class="title">Крок 1</div>
+							<div class="description">Дані про послугу</div>
+						</div>
+					</div>
+					<div class="disabled step">
+						<div class="content">
+							<div class="title">Крок 2</div>
+							<div class="description">Дані про відправника</div>
+						</div>
+					</div>
+					<div class="disabled step">
+						<div class="content">
+							<div class="title">Крок 3</div>
+							<div class="description">Дані про одержувача</div>
+
+						</div>
+					</div>
+					<div class="disabled step">
+						<div class="content">
+							<div class="title">Крок 4</div>
+							<div class="description">Інформація про відправлення</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="steps-nav">
+				<div class="ui centered grid">
+					<div class="eight wide column right aligned">
+						<div class="steps-nav__link">
+							<a href="#"><i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад</a>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="steps-nav__link">
+							<a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<form class="ui form">
+				<label><i class="info circle icon red"></i>Замовник <sup><i class="asterisk red icon"></i></sup></label>
+				<div class="inline fields">
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="cusformtomer" checked="checked">
+							<label>Відправник</label>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="cusformtomer">
+							<label>Одержувач</label>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="cusformtomer">
+							<label>Третя особа</label>
+						</div>
+					</div>
+				</div>
+				<label><i class="info circle icon red"></i>Послуга <sup><i class="asterisk red icon"></i></sup></label>
+				<div class="inline fields">
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="service" checked="checked">
+							<label>3 дні доставки</label>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="service">
+							<label>7 днів доставки</label>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<a href="#">Тарифи</a>
+				</div>
+				<div class="inline fields">
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="delivers" checked="checked">
+							<label>Імпорт в Україну</label>
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="delivers">
+							<label>Експорт з України</label>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="steps-nav">
+				<div class="ui centered grid">
+					<div class="eight wide column right aligned">
+						<div class="steps-nav__link">
+							<a href="#"><i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл</a>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="steps-nav__link">
+							<span>Надіслати</span><i class="red check circle outline icon" style="font-size: 40px"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END out-->
+</body>
+
+</html>

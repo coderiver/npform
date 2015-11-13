@@ -19,8 +19,6 @@ div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus {
 ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
-
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -29,6 +27,20 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .icon-sepa:before { content: ""; }
 
 .icon-skrill:before { content: ""; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+
+.container { width: 670px; margin: 0 auto; }
+
+.steps-nav { margin: 20px 0; }
+.steps-nav__link a { color: #f23c32; }
+.steps-nav__link span { color: #ccc; }
+.steps-nav__link i { display: inline-block; vertical-align: middle; }
+
+.form label sup { font-size: 0.5em; position: relative; top: -1em; }
+
+.page-step .step { width: 25%; }
+.page-step .ui.steps .step.active .title, .page-step .ui.steps .step.active .description { color: #f23c32; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
