@@ -32,10 +32,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .container { width: 670px; margin: 0 auto; }
 
-.steps-nav { margin: 20px 0; }
-.steps-nav__link a { color: #f23c32; }
-.steps-nav__link span { color: #ccc; }
-.steps-nav__link i { display: inline-block; vertical-align: middle; }
+.p-nav { margin: 20px 0; }
+.p-nav__link a { color: #f23c32; }
+.p-nav__link span { color: #ccc; }
+.p-nav__link i { display: inline-block; vertical-align: middle; }
 
 .form label sup { font-size: 0.5em; position: relative; top: -1em; }
 

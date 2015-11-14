@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="760">
+    <meta name="viewport" content="700">
     <meta name="format-detection" content="telephone=no">
     <!-- theme color for android 5.0 -->
     <meta name="theme-color" content="#fff">
@@ -50,42 +50,48 @@
         			</div>
         		</div>
         	</div>
-        	<div class="steps-nav">
+        	<div class="p-nav">
         		<div class="ui centered grid">
         			<div class="eight wide column right aligned">
-        				<div class="steps-nav__link">
+        				<div class="p-nav__link">
         					<a href="#"><i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад</a>
         				</div>
         			</div>
         			<div class="eight wide column">
-        				<div class="steps-nav__link">
+        				<div class="p-nav__link">
         					<a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
         				</div>
         			</div>
         		</div>
         	</div>
             <form class="ui form">
-                <div class="inline fields">
-                    <label>Одержувач <sup><i class="asterisk red icon"></i></sup></label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="sender" checked="checked">
-                            <label>Фізична особа</label>
-                        </div>
+                <div class="fields">
+                    <div class="field required">
+                        <label>Одержувач</label>
                     </div>
                     <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="sender">
-                            <label>Юридична особа</label>
+                        <div class="inline fields">
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="sender" checked="checked">
+                                    <label>Фізична особа</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="sender">
+                                    <label>Юридична особа</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="field">
-                    <label>Країна <sup><i class="asterisk red icon"></i></sup></label>
+                <div class="field required">
+                    <label>Країна</label>
                     <input type="text" name="country" placeholder="" disabled="" value="Україна">
                 </div>
-                <div class="field">
-                    <label>Місто <sup><i class="asterisk red icon"></i></sup></label>
+                <div class="field required">
+                    <label>Місто</label>
                     <div class="two fields">
                         <div class="field">
                             <input type="text" name="city[city-first]" disabled="" value="Київ">
@@ -95,14 +101,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="field">
-                    <label>Прізвище, ім'я відправника <sup><i class="asterisk red icon"></i></sup></label>
+                <div class="field required">
+                    <label>Прізвище, ім'я відправника</label>
                     <div class="two fields">
                         <div class="field">
-                            <input type="text" name="name2[first-name]" placeholder="">
+                            <input type="text" name="name2[first-name]" placeholder="" required>
                         </div>
                         <div class="field">
-                            <input type="text" name="name2[last-name]" placeholder="Placeholder">
+                            <input type="text" name="name2[last-name]" placeholder="Placeholder" required>
                         </div>
                     </div>
                 </div>
@@ -117,12 +123,12 @@
                     </div>
                 </div>
                 <div class="two fields">
-                    <div class="field">
-                        <label>Номер телефону <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="field required">
+                        <label>Номер телефону</label>
                         <input type="tel" name="phone" placeholder="" required>
                     </div>
-                    <div class="field">
-                        <label>Email <sup><i class="asterisk red icon"></i></sup></label>
+                    <div class="field required">
+                        <label>Email</label>
                         <input type="email" name="email" placeholder="Placeholder" required>
                     </div>
                 </div>
@@ -140,35 +146,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="field">
-                    <label>Поштовий індекс <sup><i class="asterisk red icon"></i></sup></label>
+                <div class="field required">
+                    <label>Поштовий індекс</label>
                     <input type="tel" name="name3" placeholder="" required>
                 </div>
-                <div class="field">
-                    <label><i class="info circle icon red"></i>Адреса <sup><i class="asterisk red icon"></i></sup></label>
+                <div class="field required">
+                    <label><i class="info circle icon red"></i>Адреса</label>
                     <div class="two fields">
                         <div class="field">
-                            <input type="text" name="phone" placeholder="" required>
+                            <input type="text" name="" placeholder="" required>
                         </div>
                         <div class="field">
-                            <input type="email" name="email" placeholder="Placeholder" required>
+                            <input type="email" name="" placeholder="Placeholder" required>
                         </div>
                     </div>
                 </div>
                 <div class="field">
                     <label>Детальна адреса</label>
-                    <input type="text" name="name3" placeholder="">
+                    <input type="text" name="" placeholder="">
                 </div>
             </form>
-            <div class="steps-nav">
+            <div class="p-nav">
             	<div class="ui centered grid">
             		<div class="eight wide column right aligned">
-            			<div class="steps-nav__link">
+            			<div class="p-nav__link">
             				<a href="#"><i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл</a>
             			</div>
             		</div>
             		<div class="eight wide column">
-            			<div class="steps-nav__link">
+            			<div class="p-nav__link">
             				<span>Надіслати</span><i class="red check circle outline icon" style="font-size: 40px"></i>
             			</div>
             		</div>

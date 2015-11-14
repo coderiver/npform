@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+<head>
+    //= partials/head.html
+    <title>step_4</title>
+</head>
+
+<body>
+    <!-- BEGIN  out-->
+    <div class="out">
+        <div class="container">
+            <div class="page-step">
+                <div class="ui steps">
+                    <div class="disabled step">
+                        <div class="content">
+                            <div class="title">Крок 1</div>
+                            <div class="description">Дані про послугу</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <div class="content">
+                            <div class="title">Крок 2</div>
+                            <div class="description">Дані про відправника</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <div class="content">
+                            <div class="title">Крок 3</div>
+                            <div class="description">Дані про одержувача</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <div class="content">
+                            <div class="title">Крок 4</div>
+                            <div class="description">Інформація про відправлення</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-nav">
+                <div class="ui centered grid">
+                    <div class="eight wide column right aligned">
+                        <div class="p-nav__link">
+                            <a href="#"><i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад</a>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="p-nav__link">
+                            <a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="ui form">
+                <div class="field required">
+                    <label>Тип відправлення </label>
+                    <div class="inline fields">
+                        <div class="three wide field">
+                            <select class="ui fluid dropdown" name="" required>
+                                <option value="">Вантаж</option>
+                                <option value="1">var 1</option>
+                                <option value="2">var 2</option>
+                                <option value="3">var 3</option>
+                                <option value="4">var 4</option>
+                                <option value="5">var 5</option>
+                            </select>
+                        </div>
+                        <label><a href="#">Детальна інформація</a></label>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="three required wide field">
+                        <label>Платник </label>
+                        <select class="ui fluid dropdown" name="" required>
+                            <option value="">Одержувач</option>
+                            <option value="1">var 1</option>
+                            <option value="2">var 2</option>
+                            <option value="3">var 3</option>
+                            <option value="4">var 4</option>
+                            <option value="5">var 5</option>
+                        </select>
+                    </div>
+                    <div class="three required wide field">
+                        <label>Форма оплати </label>
+                        <select class="ui fluid dropdown" name="" required>
+                            <option value="">Вантаж</option>
+                            <option value="1">var 1</option>
+                            <option value="2">var 2</option>
+                            <option value="3">var 3</option>
+                            <option value="4">var 4</option>
+                            <option value="5">var 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field required">
+                    <label>Кількість місць </label>
+                    <div class="inline fields">
+                        <div class="field">
+                            <button type="button" class="ui icon button mini"><i class="minus icon"></i></button>
+                            <button type="button" class="ui icon button mini"><i class="plus icon"></i></button>
+                        </div>
+                        <div class="two wide field">
+                            <input type="number" min="1" max="99" name="" placeholder="Placeholder" value="1" required>
+                        </div>
+                        <label><a href="#">Заборонені відправлення</a></label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="fields">
+                        <div class="one wide field">
+                            <label>#</label>
+                        </div>
+                        <div class="fifteen wide field">
+                            <div class="three fields">
+                                <div class="field required">
+                                    <label>Довжина, см </label>
+                                </div>
+                                <div class="field required">
+                                    <label>Ширина, см </label>
+                                </div>
+                                <div class="field required">
+                                    <label>Висота, см </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="one wide field">
+                            <label>1</label>
+                        </div>
+                        <div class="fifteen wide field">
+                            <div class="three fields">
+                                <div class="field">
+                                    <input type="text" name="measure[width]" placeholder="" required>
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="measure[length]" required>
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="measure[height]" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field required">
+                            <label><i class="info circle icon red"></i>Фактична вага, кг </label>
+                            <input type="tel" name="" placeholder="" required>
+                        </div>
+                        <div class="field required">
+                            <label><i class="info circle icon red"></i>Об'ємна вага, кг </label>
+                            <input type="tel" name="" placeholder="" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="field required">
+                    <label>Загальний опис відправлення </label>
+                    <div class="two fields">
+                        <div class="field">
+                            <textarea rows="2"></textarea>
+                        </div>
+                        <div class="field">
+                            <textarea rows="2" placeholder="Placeholder" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label><i class="info circle icon red"></i>Внутришній номер клієнта</label>
+                    <div class="inline fields">
+                        <div class="four wide field">
+                            <input type="text" name="">
+                        </div>
+                        <label><a href="#">Максимальні габарити і правила пакування</a></label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Додаткова інформація</label>
+                    <textarea rows="2"></textarea>
+                </div>
+                <div class="two fields">
+                    <div class="field required">
+                        <label>Загальна вартість відправлення </label>
+                        <input type="text" name="" placeholder="Placeholder" required>
+                    </div>
+                    <div class="field required">
+                        <label>Валюта </label>
+                        <div class="inline fields">
+                            <div class="five wide field">
+                                <select class="ui fluid dropdown" name="">
+                                    <option value="1">USD</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <label><a href="#">Правила розрахунку віртості відправлення</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label><i class="info circle icon red"></i>Не формувати інвойс</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button type="button" class="ui icon button mini"><i class="minus icon"></i></button>
+                        <button type="button" class="ui icon button mini"><i class="plus icon"></i></button>
+                    </div>
+                    <div class="field">
+                        <label>
+                            <a href="#">Необходні документи</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="field required">
+                    <label><i class="info circle icon red"></i>Повний опис вмісту</label>
+                    <textarea rows="2" required></textarea>
+                </div>
+                <div class="field">
+                    <div class="fields">
+                        <div class="one wide field">
+                        </div>
+                        <div class="three wide field required">
+                            <label>Країна походження</label>
+                        </div>
+                        <div class="three wide field required">
+                            <label>Одиниці</label>
+                        </div>
+                        <div class="three wide field required">
+                            <label>Кількість</label>
+                        </div>
+                        <div class="three wide field required">
+                            <label><i class="info circle icon red"></i>Вартість за одиницю</label>
+                        </div>
+                        <div class="three wide field">
+                            <label>Код товару</label>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="one wide field">
+                            <label>1</label>
+                        </div>
+                        <div class="three wide field required">
+                            <input type="text" required>
+                        </div>
+                        <div class="three wide field required">
+                            <select class="ui fluid dropdown" name="" required>
+                                <option value="">шт</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="three wide field required">
+                            <input type="number" required>
+                        </div>
+                        <div class="three wide field required">
+                            <input type="text" required>
+                        </div>
+                        <div class="three wide field">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="six wide field">
+                        <label><i class="info circle icon red"></i>Мета відправлення</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="ui checkbox field">
+                        <input type="checkbox" required>
+                        <label>Я ознайомлений і приймаю <a href="#">Умови надання послуг</a></label>
+                    </div>
+                </div>
+            </form>
+            <div class="p-nav">
+                <div class="ui centered grid">
+                    <div class="eight wide column right aligned">
+                        <div class="p-nav__link">
+                            <a href="#"><i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл</a>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="p-nav__link">
+                            <span>Надіслати</span><i class="red check circle outline icon" style="font-size: 40px"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END out-->
+</body>
+
+</html>
