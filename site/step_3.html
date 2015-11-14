@@ -66,7 +66,7 @@
         	</div>
             <form class="ui form">
                 <div class="inline fields">
-                    <label>Відправник <sup><i class="asterisk red icon"></i></sup></label>
+                    <label>Одержувач <sup><i class="asterisk red icon"></i></sup></label>
                     <div class="field">
                         <div class="ui radio checkbox">
                             <input type="radio" name="sender" checked="checked">
@@ -82,16 +82,16 @@
                 </div>
                 <div class="field">
                     <label>Країна <sup><i class="asterisk red icon"></i></sup></label>
-                    <input type="text" name="country" placeholder="">
+                    <input type="text" name="country" placeholder="" disabled="" value="Україна">
                 </div>
                 <div class="field">
                     <label>Місто <sup><i class="asterisk red icon"></i></sup></label>
                     <div class="two fields">
                         <div class="field">
-                            <input type="text" name="city[city-first]" placeholder="">
+                            <input type="text" name="city[city-first]" disabled="" value="Київ">
                         </div>
                         <div class="field">
-                            <input type="text" name="city[city-first]" placeholder="Placeholder">
+                            <input type="text" name="city[city-first]" disabled="" placeholder="Placeholder" value="Київ">
                         </div>
                     </div>
                 </div>
@@ -130,22 +130,22 @@
                     <div class="field">
                         <div class="ui radio checkbox">
                             <input type="radio" name="radio2" checked="checked">
-                            <label>Фізична особа</label>
+                            <label>Доставка за адресою</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
                             <input type="radio" name="radio2">
-                            <label>Юридична особа</label>
+                            <label>Доставка на відділення</label>
                         </div>
                     </div>
                 </div>
                 <div class="field">
-                    <label>Інформація відправника <sup><i class="asterisk red icon"></i></sup></label>
-                    <input type="text" name="name3" placeholder="" required>
+                    <label>Поштовий індекс <sup><i class="asterisk red icon"></i></sup></label>
+                    <input type="tel" name="name3" placeholder="" required>
                 </div>
                 <div class="field">
-                    <label>Адреса <sup><i class="asterisk red icon"></i></sup></label>
+                    <label><i class="info circle icon red"></i>Адреса <sup><i class="asterisk red icon"></i></sup></label>
                     <div class="two fields">
                         <div class="field">
                             <input type="text" name="phone" placeholder="" required>
