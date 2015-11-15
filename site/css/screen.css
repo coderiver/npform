@@ -32,6 +32,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .container { width: 670px; margin: 0 auto; }
 
+.p-header { margin: 20px 0; text-align: center; }
+
 .p-nav { margin: 20px 0; }
 .p-nav__link a { color: #f23c32; }
 .p-nav__link span { color: #ccc; }
@@ -41,6 +43,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .page-step .step { width: 25%; }
 .page-step .ui.steps .step.active .title, .page-step .ui.steps .step.active .description { color: #f23c32; }
+
+.ui.form .field_mb { margin-bottom: 1.5em; }
+
+.field.vert label { padding-top: 10px; }
+.field.vert-button { padding-top: 7px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

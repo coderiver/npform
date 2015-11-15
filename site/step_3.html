@@ -64,24 +64,23 @@
         			</div>
         		</div>
         	</div>
+            <div class="p-header">
+                <h2 class="ui header">Дані про одержувача</h2>
+            </div>
             <form class="ui form">
-                <div class="fields">
-                    <div class="field required">
-                        <label>Одержувач</label>
-                    </div>
-                    <div class="field">
-                        <div class="inline fields">
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="sender" checked="checked">
-                                    <label>Фізична особа</label>
-                                </div>
+                <div class="field field_mb required">
+                    <label>Одержувач</label>
+                    <div class="inline fields">
+                        <div class="four wide field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="cusformtomer" checked="checked">
+                                <label>Фізична особа</label>
                             </div>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="sender">
-                                    <label>Юридична особа</label>
-                                </div>
+                        </div>
+                        <div class="four wide field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="cusformtomer">
+                                <label>Юридична особа</label>
                             </div>
                         </div>
                     </div>
@@ -132,35 +131,43 @@
                         <input type="email" name="email" placeholder="Placeholder" required>
                     </div>
                 </div>
-                <div class="inline fields">
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="radio2" checked="checked">
-                            <label>Доставка за адресою</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="radio2">
-                            <label>Доставка на відділення</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="field required">
-                    <label>Поштовий індекс</label>
-                    <input type="tel" name="name3" placeholder="" required>
-                </div>
-                <div class="field required">
-                    <label><i class="info circle icon red"></i>Адреса</label>
-                    <div class="two fields">
+                <div class="field field_mb">
+                    <div class="inline fields">
                         <div class="field">
-                            <input type="text" name="" placeholder="" required>
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="radio2" checked="checked">
+                                <label>Доставка за адресою</label>
+                            </div>
                         </div>
                         <div class="field">
-                            <input type="email" name="" placeholder="Placeholder" required>
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="radio2">
+                                <label>Доставка на відділення</label>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="fields">
+                    <div class="thirteen wide field required">
+                        <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Адреса</label>
+                        <div class="two fields">
+                            <div class="field">
+                                <input type="text" name="" placeholder="" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" name="" placeholder="Placeholder" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three wide field required">
+                        <label>Поштовий індекс</label>
+                        <input type="tel" name="name3" placeholder="" required>
+                    </div>
+                </div>
+
                 <div class="field">
                     <label>Детальна адреса</label>
                     <input type="text" name="" placeholder="">

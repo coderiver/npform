@@ -52,11 +52,14 @@
                     </div>
                 </div>
             </div>
+            <div class="p-header">
+                <h2 class="ui header">Інформація про відправлення</h2>
+            </div>
             <form class="ui form">
                 <div class="field required">
                     <label>Тип відправлення </label>
-                    <div class="inline fields">
-                        <div class="three wide field">
+                    <div class="fields">
+                        <div class="four wide field">
                             <select class="ui fluid dropdown" name="" required>
                                 <option value="">Вантаж</option>
                                 <option value="1">var 1</option>
@@ -66,11 +69,13 @@
                                 <option value="5">var 5</option>
                             </select>
                         </div>
-                        <label><a href="#">Детальна інформація</a></label>
+                        <div class="field vert">
+                            <label><a href="#">Детальна інформація</a></label>
+                        </div>
                     </div>
                 </div>
-                <div class="two fields">
-                    <div class="three required wide field">
+                <div class="fields">
+                    <div class="four required wide field">
                         <label>Платник </label>
                         <select class="ui fluid dropdown" name="" required>
                             <option value="">Одержувач</option>
@@ -81,10 +86,10 @@
                             <option value="5">var 5</option>
                         </select>
                     </div>
-                    <div class="three required wide field">
+                    <div class="four required wide field">
                         <label>Форма оплати </label>
                         <select class="ui fluid dropdown" name="" required>
-                            <option value="">Вантаж</option>
+                            <option value="">Visa</option>
                             <option value="1">var 1</option>
                             <option value="2">var 2</option>
                             <option value="3">var 3</option>
@@ -95,15 +100,21 @@
                 </div>
                 <div class="field required">
                     <label>Кількість місць </label>
-                    <div class="inline fields">
-                        <div class="field">
-                            <button type="button" class="ui icon button mini"><i class="minus icon"></i></button>
-                            <button type="button" class="ui icon button mini"><i class="plus icon"></i></button>
+                    <div class="fields js-number">
+                        <div class="four wide field">
+                        <div class="two fields">
+                            <div class="field vert-button">
+                                <button type="button" class="ui icon button mini js-number-minus"><i class="minus icon"></i></button>
+                                <button type="button" class="ui icon button mini js-number-plus"><i class="plus icon"></i></button>
+                            </div>
+                            <div class="field">
+                                <input type="number" min="1" max="99" name="" class="js-number-input" value="1" required>
+                            </div>
                         </div>
-                        <div class="two wide field">
-                            <input type="number" min="1" max="99" name="" placeholder="Placeholder" value="1" required>
                         </div>
-                        <label><a href="#">Заборонені відправлення</a></label>
+                        <div class="five wide field vert">
+                            <label><a href="#">Заборонені відправлення</a></label>
+                        </div>
                     </div>
                 </div>
                 <div class="field">
@@ -126,7 +137,7 @@
                         </div>
                     </div>
                     <div class="fields">
-                        <div class="one wide field">
+                        <div class="one wide field vert">
                             <label>1</label>
                         </div>
                         <div class="fifteen wide field">
@@ -147,11 +158,15 @@
                 <div class="field">
                     <div class="two fields">
                         <div class="field required">
-                            <label><i class="info circle icon red"></i>Фактична вага, кг </label>
+                            <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Фактична вага, кг </label>
                             <input type="tel" name="" placeholder="" required>
                         </div>
                         <div class="field required">
-                            <label><i class="info circle icon red"></i>Об'ємна вага, кг </label>
+                            <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Об'ємна вага, кг </label>
                             <input type="tel" name="" placeholder="" required>
                         </div>
                     </div>
@@ -168,12 +183,16 @@
                     </div>
                 </div>
                 <div class="field">
-                    <label><i class="info circle icon red"></i>Внутришній номер клієнта</label>
-                    <div class="inline fields">
+                    <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Внутришній номер клієнта</label>
+                    <div class="fields">
                         <div class="four wide field">
                             <input type="text" name="">
                         </div>
-                        <label><a href="#">Максимальні габарити і правила пакування</a></label>
+                        <div class="field vert">
+                            <label><a href="#">Максимальні габарити і правила пакування</a></label>
+                        </div>
                     </div>
                 </div>
                 <div class="field">
@@ -205,7 +224,9 @@
                     <div class="field">
                         <div class="ui checkbox">
                             <input type="checkbox">
-                            <label><i class="info circle icon red"></i>Не формувати інвойс</label>
+                            <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Не формувати інвойс</label>
                         </div>
                     </div>
                     <div class="field">
@@ -219,7 +240,9 @@
                     </div>
                 </div>
                 <div class="field required">
-                    <label><i class="info circle icon red"></i>Повний опис вмісту</label>
+                    <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Повний опис вмісту</label>
                     <textarea rows="2" required></textarea>
                 </div>
                 <div class="field">
@@ -236,14 +259,16 @@
                             <label>Кількість</label>
                         </div>
                         <div class="three wide field required">
-                            <label><i class="info circle icon red"></i>Вартість за одиницю</label>
+                            <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Вартість за одиницю</label>
                         </div>
                         <div class="three wide field">
                             <label>Код товару</label>
                         </div>
                     </div>
                     <div class="fields">
-                        <div class="one wide field">
+                        <div class="one wide field vert">
                             <label>1</label>
                         </div>
                         <div class="three wide field required">
@@ -271,7 +296,9 @@
                     </div>
                 </div>
                 <div class="field">
-                    <label><i class="info circle icon red"></i>Мета відправлення</label>
+                    <label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                          <i class="info circle icon red"></i>
+                        </span>Мета відправлення</label>
                     <input type="text">
                 </div>
                 <div class="inline fields">

@@ -39,7 +39,6 @@
 						<div class="content">
 							<div class="title">Крок 3</div>
 							<div class="description">Дані про одержувача</div>
-
 						</div>
 					</div>
 					<div class="disabled step">
@@ -64,9 +63,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="p-header">
+				<h2 class="ui header">Дані про послугу</h2>
+			</div>
 			<form class="ui form">
-				<div class="field required">
-					<label><i class="info circle icon red"></i>Замовник</label>
+				<div class="field field_mb required">
+					<label>
+						<span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+						  <i class="info circle icon red"></i>
+						</span> Замовник
+					</label>
 					<div class="inline fields">
 						<div class="four wide field">
 							<div class="ui radio checkbox">
@@ -88,8 +94,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="field">
-					<label><i class="info circle icon red"></i>Послуга</label>
+				<div class="field field_mb">
+					<label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+						  <i class="info circle icon red"></i>
+						</span>Послуга</label>
 					<div class="inline fields">
 						<div class="four wide field">
 							<div class="ui radio checkbox">
@@ -105,20 +113,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="field">
+				<div class="field field_mb ui center aligned grid">
 					<a href="#">Тарифи</a>
 				</div>
-				<div class="inline fields">
-					<div class="four wide field">
-						<div class="ui radio checkbox">
-							<input type="radio" name="delivers" checked="checked">
-							<label>Імпорт в Україну</label>
+				<div class="field field_mb">
+					<div class="inline fields">
+						<div class="four wide field">
+							<div class="ui radio checkbox">
+								<input type="radio" name="delivers" checked="checked">
+								<label>Імпорт в Україну</label>
+							</div>
 						</div>
-					</div>
-					<div class="four wide field">
-						<div class="ui radio checkbox">
-							<input type="radio" name="delivers">
-							<label>Експорт з України</label>
+						<div class="four wide field">
+							<div class="ui radio checkbox">
+								<input type="radio" name="delivers">
+								<label>Експорт з України</label>
+							</div>
 						</div>
 					</div>
 				</div>
