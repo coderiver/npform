@@ -61,7 +61,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .page-step .ui.steps .step.active .title, .page-step .ui.steps .step.active .description { color: #f23c32; }
 
 .ui.form .field_mb { margin-bottom: 1.5em; }
-.ui.table.goods td { vertical-align: middle; }
+.ui.table.table-vertical td { vertical-align: middle; }
 
 .field.vert label { padding-top: 10px; }
 .field.vert-button { padding-top: 7px; }
