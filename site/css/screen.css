@@ -52,6 +52,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .p-nav__link span { color: #ccc; }
 .p-nav__link button { background: none; color: #f23c32; }
 .p-nav__link button:active { color: #e3190e; }
+.p-nav__link button:disabled { color: #ccc; }
 .p-nav__link i { display: inline-block; vertical-align: middle; }
 
 .form label sup { font-size: 0.5em; position: relative; top: -1em; }

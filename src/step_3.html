@@ -40,19 +40,23 @@
         		</div>
         	</div>
         	<div class="p-nav">
-        		<div class="ui centered grid">
-        			<div class="eight wide column right aligned">
-        				<div class="p-nav__link">
-        					<a href="#"><i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад</a>
-        				</div>
-        			</div>
-        			<div class="eight wide column">
-        				<div class="p-nav__link">
-        					<a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
+                <div class="ui centered grid">
+                    <div class="eight wide column right aligned">
+                        <div class="p-nav__link">
+                        <button type="button">
+                            <i class="red arrow circle outline left icon" style="font-size: 40px"></i>Назад
+                        </button>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="p-nav__link">
+                            <button type="button" disabled>
+                                Далі<i class="red arrow circle outline right icon" style="font-size: 40px"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="p-header">
                 <h2 class="ui header">Дані про одержувача</h2>
             </div>
@@ -173,11 +177,13 @@
                     </div>
                     <div class="eight wide column">
                         <div class="p-nav__link">
-                            <span>Надіслати</span><i class="red check circle outline icon" style="font-size: 40px"></i>
+                        <button type="button" disabled>
+                            Надіслати<i class="red check circle outline icon" style="font-size: 40px"></i>
+                        </button>
                         </div>
                     </div>
                 </div>
-            </div>>
+            </div>
             <!-- upload file -->
             <div class="p-choose-file js-filemenu">
                 <div class="p-choose-file__table">
