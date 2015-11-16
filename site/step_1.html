@@ -9,7 +9,7 @@
 	<meta name="theme-color" content="#fff">
 	<!-- <meta name="viewport" content="width=760"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<script src="js/app.js"></script>
 	<script src="semantic/semantic.min.js"></script>
@@ -164,7 +164,9 @@
 				<div class="ui centered grid">
 					<div class="eight wide column right aligned">
 						<div class="p-nav__link">
-							<a href="#"><i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл</a>
+						<button type="button" class="js-show-filemenu">
+							<i class="red file text outline icon" style="font-size: 40px"></i>Завантажити файл
+						</button>
 						</div>
 					</div>
 					<div class="eight wide column">
@@ -173,6 +175,34 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="p-choose-file js-filemenu">
+				<div class="p-choose-file__table">
+					<table class="ui celled table unstackable js-filemenu-table">
+					  <thead>
+					    <tr><th>Імя файлу</th>
+					    <th>Розмір</th>
+					    <th>Статус завантаження</th>
+					  </tr></thead>
+					  <tbody>
+					    <tr>
+					      <td>
+					        loremIpsumdoLorsitAmet.pdf
+					      </td>
+					      <td>85.34KB</td>
+					      <td>LOAD</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+				<div class="p-choose-file__left">
+					<input type="file" class="js-filemenu-input" name="file">
+				</div>
+				<div class="p-choose-file__right">
+					<button class="ui icon button js-filemenu-load">
+						<i class="upload icon red"></i>
+					</button>
+				</div>	
 			</div>
 		</div>
 	</div>

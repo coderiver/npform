@@ -53,7 +53,22 @@ $(document).ready(function() {
 			$block.show();
 		} else $block.hide();
 	});
-
+	// load file
+	$('.js-show-filemenu').on('click', function() {
+		$('.js-filemenu').show();
+	});
+	// add row
+	$('.js-filemenu-load').on('click', function() {
+		var $parent = $(this).parent('.js-filemenu'),
+			$input = $parent.find('.js-filemenu-input');
+			// console.log($parent);
+			// console.log($input);
+			// alert($('.js-filemenu-find').val()); 	
+		if($('.js-filemenu-find').val() !== "") {
+			console.log('yes');
+		}
+		else console.log('no');
+	})
 	// semantic ui
 	$('.js-tooltip').popup();
 	$('.ui.checkbox').checkbox();

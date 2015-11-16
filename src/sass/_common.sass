@@ -74,7 +74,14 @@ body
 	&__icon
 		color: #f23c32
 		font-size: 60px 
-		
+.p-choose-file
+	+clr
+	&__table
+		margin-bottom: 20px 
+	&__left
+		float: left
+	&__right
+		float: right		
 .p-nav
 	margin: 20px 0 
 	&__link
@@ -82,6 +89,11 @@ body
 			color: #f23c32
 		span
 			color : #ccc
+		button
+			background: none
+			color: #f23c32
+			&:active
+				color: darken(#f23c32, 10%)
 		i
 			display: inline-block
 			vertical-align: middle
