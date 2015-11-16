@@ -32,6 +32,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .container { width: 670px; margin: 0 auto; }
 
+.p-hidden { display: none; }
+
 .p-header { margin: 20px 0; text-align: center; }
 
 .p-nav { margin: 20px 0; }

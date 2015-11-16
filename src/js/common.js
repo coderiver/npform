@@ -39,6 +39,17 @@ $(document).ready(function() {
 		});
 	}
 	number();
+
+	// show block
+	$('.js-radio-group input').on('change', function() {
+		var $block = $('.js-block');
+		$block.hide();
+		if($(this).parent('.js-open-block').data("block")) {
+			$block.show();
+		} else $block.hide();
+	});
+
+	// semantic ui
 	$('.js-tooltip').popup();
 	$('.ui.checkbox').checkbox();
 	$('.ui.radio.checkbox').checkbox();

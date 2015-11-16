@@ -58,7 +58,8 @@
 					</div>
 					<div class="eight wide column">
 						<div class="p-nav__link">
-							<a href="#">Далі <i class="red arrow circle outline right icon" style="font-size: 40px"></i></a>
+							<!-- <a href="#">Далі </a> -->
+							<span>Далі<i class="red arrow circle outline right icon" style="font-size: 40px"></i></span>
 						</div>
 					</div>
 				</div>
@@ -73,24 +74,50 @@
 						  <i class="info circle icon red"></i>
 						</span> Замовник
 					</label>
-					<div class="inline fields">
+					<div class="inline fields js-radio-group">
 						<div class="four wide field">
 							<div class="ui radio checkbox">
-								<input type="radio" name="cusformtomer" checked="checked">
+								<input type="radio" name="customer" checked="checked">
 								<label>Відправник</label>
 							</div>
 						</div>
 						<div class="four wide field">
 							<div class="ui radio checkbox">
-								<input type="radio" name="cusformtomer">
+								<input type="radio" name="customer">
 								<label>Одержувач</label>
 							</div>
 						</div>
 						<div class="four wide field">
-							<div class="ui radio checkbox">
-								<input type="radio" name="cusformtomer">
+							<div class="ui radio checkbox js-open-block" data-block="js-block">
+								<input type="radio" name="customer">
 								<label>Третя особа</label>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="js-block p-hidden field">
+					<div class="field">
+						<label>Країна</label>
+						<input type="text" name="country" placeholder="">
+					</div>
+					<div class="field">
+						<label><span class="ui icon js-tooltip" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+						  <i class="info circle icon red"></i>
+						</span>Назва компанії</label>
+						<input type="text" name="country" placeholder="">
+					</div>
+					<div class="field required">
+						<label>Повне ім'я представника</label>
+						<input type="text" name="country" placeholder="" required>
+					</div>
+					<div class="two fields">
+						<div class="field required">
+							<label>Номер телефону</label>
+							<input type="tel" name="phone" placeholder="" required>
+						</div>
+						<div class="field required">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Placeholder" required>
 						</div>
 					</div>
 				</div>
