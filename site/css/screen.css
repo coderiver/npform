@@ -41,7 +41,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .p-final strong { font-weight: bold; }
 .p-final__icon { color: #f23c32; font-size: 60px; }
 
-.p-choose-file { *zoom: 1; }
+.p-choose-file { display: none; *zoom: 1; }
 .p-choose-file:after { content: " "; display: table; clear: both; }
 .p-choose-file__table { margin-bottom: 20px; }
 .p-choose-file__left { float: left; }
@@ -60,6 +60,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .page-step .ui.steps .step.active .title, .page-step .ui.steps .step.active .description { color: #f23c32; }
 
 .ui.form .field_mb { margin-bottom: 1.5em; }
+.ui.table.goods td { vertical-align: middle; }
 
 .field.vert label { padding-top: 10px; }
 .field.vert-button { padding-top: 7px; }

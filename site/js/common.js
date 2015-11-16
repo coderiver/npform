@@ -50,19 +50,15 @@ $(document).ready(function() {
 	});
 	// load file
 	$('.js-show-filemenu').on('click', function() {
-		$('.js-filemenu').show();
+		$('.js-filemenu').toggle();
 	});
 	// add row
 	$('.js-filemenu-load').on('click', function() {
-		var $parent = $(this).parent('.js-filemenu'),
-			$input = $parent.find('.js-filemenu-input');
-			// console.log($parent);
-			// console.log($input);
-			// alert($('.js-filemenu-find').val()); 	
-		if($('.js-filemenu-find').val() !== "") {
-			console.log('yes');
+		var $parent = $(this).parent().parent('.js-filemenu'),
+			$input = $parent.find('.js-filemenu-input');	
+		if($input.val() !== "") {	
 		}
-		else console.log('no');
+		else console.warn('file doesn\'t exist');
 	})
 	// semantic ui
 	$('.js-tooltip').popup();
