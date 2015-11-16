@@ -122,8 +122,19 @@ body
 		&.table-vertical
 			td
 				vertical-align: middle 
+		&.table-goods
+			tr
+				&:nth-child(2n)
+					td
+						border-top: 0
+				// &:nth-child(3n+4),
+				// &:nth-child(2n+4)
+				// 	background: red
+				// // &:nth-child(4n)
 .field.vert
 	label
 		padding-top: 10px 
 	&-button
 		padding-top: 7px  
+.ui.form .field :disabled
+	background: #dedede 

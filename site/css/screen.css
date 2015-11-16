@@ -62,9 +62,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .ui.form .field_mb { margin-bottom: 1.5em; }
 .ui.table.table-vertical td { vertical-align: middle; }
+.ui.table.table-goods tr:nth-child(2n) td { border-top: 0; }
 
 .field.vert label { padding-top: 10px; }
 .field.vert-button { padding-top: 7px; }
+
+.ui.form .field :disabled { background: #dedede; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
